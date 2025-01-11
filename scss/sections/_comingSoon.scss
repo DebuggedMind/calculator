@@ -1,0 +1,104 @@
+.coming-soon-container {
+    background-color: transparent;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.coming-soon-child {
+    border: 3px solid hsla(0, 0%, 0%, 0.5);
+    border-radius: 30px;
+    width: 30rem;
+    position: relative;
+
+    div {
+        border-radius: 30px;
+        display: flex;
+        flex-flow: column;
+
+        img {
+            transform: scale(0.7);
+        }
+
+        h1, h2, div {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        h2 {
+            margin-bottom: 1.9rem;
+        }
+
+        div {
+            button {
+                background-color: #33cc99;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 8px;
+                color: white;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #2b9f7f;
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 28px;
+        z-index: -1;
+        background-color: hsla(198, 100%, 9%, 0.3);
+    }
+}
+
+/* Media Queries */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .coming-soon-child {
+        width: 25rem; /* Adjust width for smaller screens */
+
+        div {
+            img {
+                transform: scale(0.6); /* Reduce image size */
+            }
+
+            h1, h2 {
+                font-size: 1.5rem; /* Reduce font size */
+            }
+
+            button {
+                font-size: 0.9rem; /* Adjust button text size */
+            }
+        }
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .coming-soon-child {
+        width: 20rem; /* Further reduce width */
+
+        div {
+            img {
+                transform: scale(0.5); /* Smaller image for mobile */
+            }
+
+            h1, h2 {
+                font-size: 1.2rem; /* Further reduce font size */
+            }
+
+            button {
+                padding: 0.4rem 0.8rem; /* Adjust button padding */
+                font-size: 0.8rem; /* Smaller button text */
+            }
+        }
+    }
+}

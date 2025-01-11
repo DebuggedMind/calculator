@@ -1,0 +1,153 @@
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img {
+    transform: scale(0.5);
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure proper layout alignment */
+}
+.hero1{
+    background: linear-gradient(to left, #00202e, #193642);
+    width: 100%;
+    
+    
+
+    .container-fluid{
+        padding:4rem ;
+        margin-bottom: 0;
+    }
+}
+
+
+
+/* Hero Content */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+    padding: 1rem; /* Add some padding for spacing */
+}
+
+.hero-content h1,
+.hero-content h3 {
+    font-family: 'Poppins', sans-serif;
+    color: white; /* Ensure text is legible */
+}
+
+.hero-content h1 {
+    font-weight: 700;
+    font-size: 2.9rem; /* Adjust size for better visibility */
+}
+
+.hero-content h3 {
+    margin: 1rem 0;
+    line-height: 1.7;
+    font-weight: 400; /* Make h3 lighter than h1 */
+}
+
+.hero-content button {
+    width: 14rem;
+    padding: 0.8rem;
+    height: 4rem;
+    font-size: 1.1rem; /* Adjust font size */
+    margin-top: 15px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    background-color: #007bff; /* Primary button color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-content button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+    
+}
+
+.hero-content p {
+    text-align: center;
+    margin: 0;
+}
+
+/* Rotate animation on hover */
+.hero-content button:hover {
+     /* Faster rotation */
+     .animate-btn{
+        animation: rotate 3s linear infinite;
+     }
+     
+}
+
+/* Media queries for responsiveness */
+
+/* Small screens: Adjust text size */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.4rem; /* Smaller size for h1 */
+    }
+
+    .hero-content h3 {
+        font-size: 1rem; /* Smaller size for h3 */
+    }
+
+    .hero-content button {
+        width: 12rem;
+        height: 3.5rem; /* Reduce button size */
+        font-size: 1rem;
+        padding: 0.6rem; /* Adjust padding */
+    }
+}
+
+/* Extra small screens: Further reduce text and button sizes */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem; /* Smaller size for h1 */
+    }
+
+    .hero-content h3 {
+        font-size: 0.9rem; /* Smaller size for h3 */
+    }
+
+    .hero-content button {
+        width: 10rem;
+        height: 3rem; /* Further reduce button size */
+        font-size: 0.9rem;
+        padding: 0.5rem; /* Adjust padding */
+    }
+}
+
+
+/* Rotate Animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg); /* Full rotation */
+    }
+}
+
+/* Icon Container */
+.animate-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Ensure icon is appropriately sized */
+    color: #fff; /* Icon color matches button text */
+    transition: transform 0.3s ease; /* Smooth start for animation */
+}
+
+

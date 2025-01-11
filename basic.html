@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="A brief description of your page">
+        <meta name="author" content="Your Name">
+        <meta name="keywords"
+            content="calculator, fast, accurate, calculations, basic arithmetic">
+        <title>My Project</title>
+
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap"
+            rel="stylesheet">
+        <!-- Include Font Awesome from CDN -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Preload important assets -->
+        <link rel="preload" href="img/undraw_problem-solving_8lg7.png"
+            as="image">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+        <!-- Bootstrap CSS (important to include this) -->
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-2 shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5 " href="#" aria-label="Homepage">
+                    <img src="img/olodBKIQQKi3e0hicJCojQ-removebg-preview.png"
+                        alt="Company Logo"
+                        style="width: 150px; height: 50px; object-fit: contain;">
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto links text-white">
+                        <a class="nav-link text-white" aria-current="page"
+                            href="#">Home</a>
+                        <a class="nav-link text-white" href="#">About</a>
+                        <a class="nav-link text-white" href="#">Services</a>
+                        <a class="nav-link text-white"
+                            aria-disabled="true">Support</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="calculator">
+            <!-- Display -->
+            <input type="text" class="form-control calculator-display"
+                id="display" readonly>
+
+            <!-- Buttons -->
+            <div class="row g-2">
+                <div class="col-3"><button class="btn btn-secondary w-100"
+                        data-value="7">7</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100"
+                        data-value="8">8</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100"
+                        data-value="9">9</button></div>
+                <div class="col-3"><button class="btn btn-warning w-100"
+                        data-value="/">/</button></div>
+
+                <div class="col-3"><button class="btn btn-secondary w-100"
+                        data-value="4">4</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100"
+                        data-value="5">5</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100"
+                        data-value="6">6</button></div>
+                <div class="col-3"><button class="btn btn-warning w-100"
+                        data-value="*">*</button></div>
+
+                <div class="col-3"><button class="btn btn-secondary w-100"
+                        data-value="1">1</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100"
+                        data-value="2">2</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100"
+                        data-value="3">3</button></div>
+                <div class="col-3"><button class="btn btn-warning w-100"
+                        data-value="-">-</button></div>
+
+                <div class="col-3"><button class="btn btn-secondary w-100"
+                        data-value="0">0</button></div>
+                <div class="col-3"><button class="btn btn-secondary w-100"
+                        data-value=".">.</button></div>
+                <div class="col-3"><button class="btn btn-equal w-100"
+                        id="equal">=</button></div>
+                <div class="col-3"><button class="btn btn-warning w-100"
+                        data-value="+">+</button></div>
+
+                <div class="col-12 mt-2"><button class="btn btn-danger w-100"
+                        id="clear">C</button></div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+
+        <footer class="bg-dark text-white pt-5 pb-3">
+            <div class="container">
+                <div class="row">
+                    <!-- Column 1: About Us -->
+                    <div class="col-md-4 mb-4">
+                        <h5>About Us</h5>
+                        <p>We are a forward-thinking tech company dedicated to
+                            providing
+                            innovative and efficient digital solutions. Our team
+                            is committed
+                            to simplifying complex problems through cutting-edge
+                            tools and
+                            software that make life easier for everyone. Whether
+                            you're a
+                            student, professional, or business owner, we have a
+                            solution for
+                            you!</p>
+                        <p>Founded in 2020, we aim to bridge the gap between
+                            technology and
+                            everyday tasks. We believe that technology should be
+                            accessible,
+                            user-friendly, and make a real difference in your
+                            life.</p>
+                    </div>
+                    <!-- Column 2: Links -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#"
+                                    class="text-light text-decoration-none">Home</a></li>
+                            <li><a href="#"
+                                    class="text-light text-decoration-none">Services</a></li>
+                            <li><a href="#"
+                                    class="text-light text-decoration-none">Contact</a></li>
+                            <li><a href="#"
+                                    class="text-light text-decoration-none">Privacy
+                                    Policy</a></li>
+                            <li><a href="#"
+                                    class="text-light text-decoration-none">FAQs</a></li>
+                            <li><a href="#"
+                                    class="text-light text-decoration-none">Blog</a></li>
+                            <li><a href="#"
+                                    class="text-light text-decoration-none">Terms
+                                    & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3: Contact Info -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Contact Us</h5>
+                        <p>1234 Street Name, City, Country</p>
+                        <p>Email: <a href="mailto:info@example.com"
+                                class="text-light text-decoration-none">info@example.com</a></p>
+                        <p>Phone: <a href="tel:+11234567890"
+                                class="text-light text-decoration-none">(123)
+                                456-7890</a></p>
+                        <p>Operating Hours: Monday - Friday, 9 AM - 6 PM</p>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <!-- Bottom Section -->
+                <div class="text-center">
+                    <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+                    <div>
+                        <a href="https://facebook.com"
+                            class="text-light me-3 text-decoration-none"
+                            aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com"
+                            class="text-light me-3 text-decoration-none"
+                            aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com"
+                            class="text-light me-3 text-decoration-none"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com"
+                            class="text-light me-3 text-decoration-none"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS and Popper.js (important for the navbar toggle) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init();
+      </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+    </script>
+        <!-- JavaScript for Functionality -->
+        <script>
+            // Select elements
+            const display = document.getElementById("display");
+            const buttons = document.querySelectorAll("button");
+          
+            // Variables to store the current input and calculation state
+            let currentInput = "";
+            let isResultDisplayed = false;
+          
+            // Add event listeners to buttons
+            buttons.forEach(button => {
+              button.addEventListener("click", () => {
+                const value = button.getAttribute("data-value");
+          
+                // Clear button
+                if (button.id === "clear") {
+                  currentInput = "";
+                  display.value = "";
+                  isResultDisplayed = false; // Reset result state
+                  return;
+                }
+          
+                // Equal button
+                if (button.id === "equal") {
+                  try {
+                    currentInput = eval(currentInput).toString(); // Evaluate the input
+                    display.value = currentInput;
+                    isResultDisplayed = true; // Mark result as displayed
+                  } catch (error) {
+                    display.value = "Error";
+                    currentInput = "";
+                  }
+                  return;
+                }
+          
+                // If a result is displayed and an operation is clicked, continue calculation
+                if (isResultDisplayed && ["+", "-", "*", "/"].includes(value)) {
+                  isResultDisplayed = false; // Allow continued calculation
+                  currentInput += value; // Append operator to current result
+                  display.value = currentInput;
+                  return;
+                }
+          
+                // If a result is displayed and a number is clicked, start a new calculation
+                if (isResultDisplayed) {
+                  currentInput = ""; // Clear input for new calculation
+                  isResultDisplayed = false;
+                }
+          
+                // Append clicked button's value to the input
+                currentInput += value;
+                display.value = currentInput;
+              });
+            });
+          </script>
+
+    </body>
+</html>

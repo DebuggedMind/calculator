@@ -1,0 +1,66 @@
+.ask-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.ask-content div div {
+    background: linear-gradient(to left, #00202e, #193642);
+    font-size: 2rem; /* Default font size for larger screens */
+    font-weight: 700;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.ask-content p {
+    font-size: 2rem; /* Default font size */
+    line-height: 1.7;
+    font-family: 'Merriweather', serif;
+    text-align: left;
+}
+
+.ask-image {
+    transform: scale(0.9); /* Default scale */
+}
+
+/* Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .ask-content {
+        padding: 2rem; /* Reduce padding for smaller screens */
+    }
+
+    .ask-content div div {
+        font-size: 1.8rem; /* Adjust font size */
+    }
+
+    .ask-content p {
+        font-size: 1.8rem; /* Slightly smaller text */
+    }
+
+    .ask-image {
+        transform: scale(0.85); /* Adjust image scale */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .ask-content {
+        padding: 1.5rem; /* Further reduce padding */
+    }
+
+    .ask-content div div {
+        font-size: 1.5rem; /* Smaller font for tight spaces */
+    }
+
+    .ask-content p {
+        font-size: 1.6rem; /* Adjust text size */
+    }
+
+    .ask-image {
+        transform: scale(0.8); /* Further reduce image size */
+    }
+}
